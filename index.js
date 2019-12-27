@@ -63,6 +63,10 @@ app.group("/api/v1", (router) => {
     //LOGIN API
     router.post('/login',JWTController.login)
 
+    // homepage
+    app.get('/',(req,res)=>{
+        res.send('Batch 13 Ganteng Sekali')
+    })
     
 })
 
